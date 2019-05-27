@@ -45,6 +45,7 @@
             this.teaComboList.Name = "teaComboList";
             this.teaComboList.Size = new System.Drawing.Size(241, 24);
             this.teaComboList.TabIndex = 0;
+            this.teaComboList.SelectedIndexChanged += new System.EventHandler(this.teaComboList_SelectedIndexChanged);
             // 
             // txtCountDown
             // 
@@ -64,10 +65,12 @@
             this.btnTea.TabIndex = 2;
             this.btnTea.Text = "담그기!";
             this.btnTea.UseVisualStyleBackColor = true;
+            this.btnTea.Click += new System.EventHandler(this.btnTea_Click);
             // 
             // timer
             // 
             this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // label1
             // 
@@ -103,6 +106,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "차 마시기";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
