@@ -29,46 +29,68 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.combo = new System.Windows.Forms.ComboBox();
+            this.txtCountDown = new System.Windows.Forms.TextBox();
+            this.btnTea = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // combo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 20);
-            this.comboBox1.TabIndex = 0;
+            this.combo.Font = new System.Drawing.Font("굴림", 12F);
+            this.combo.FormattingEnabled = true;
+            this.combo.Location = new System.Drawing.Point(12, 12);
+            this.combo.Name = "combo";
+            this.combo.Size = new System.Drawing.Size(241, 24);
+            this.combo.TabIndex = 0;
             // 
-            // textBox1
+            // txtCountDown
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtCountDown.Font = new System.Drawing.Font("굴림", 15F);
+            this.txtCountDown.Location = new System.Drawing.Point(13, 127);
+            this.txtCountDown.Name = "txtCountDown";
+            this.txtCountDown.ReadOnly = true;
+            this.txtCountDown.Size = new System.Drawing.Size(241, 30);
+            this.txtCountDown.TabIndex = 1;
+            this.txtCountDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btnTea
             // 
-            this.button1.Location = new System.Drawing.Point(12, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 49);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTea.Location = new System.Drawing.Point(12, 55);
+            this.btnTea.Name = "btnTea";
+            this.btnTea.Size = new System.Drawing.Size(241, 49);
+            this.btnTea.TabIndex = 2;
+            this.btnTea.Text = "담그기!";
+            this.btnTea.UseVisualStyleBackColor = true;
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(125, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "2019.05.27 3501 강지현";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 166);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(266, 196);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnTea);
+            this.Controls.Add(this.txtCountDown);
+            this.Controls.Add(this.combo);
+            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "차 마시기";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,10 +98,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox combo;
+        private System.Windows.Forms.TextBox txtCountDown;
+        private System.Windows.Forms.Button btnTea;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label label1;
     }
 }
 
